@@ -1,24 +1,24 @@
 import { chromium } from 'playwright';
 import { injectAxe } from 'axe-playwright';
 
-export async function runAccessibilityTest(url: string): Promise<any[]> {  // Alterado para retornar um array de objetos
+export async function runAccessibilityTest(url: string): Promise<any[]> {  // Changed to return an array of objects
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  // Navegar até o URL desejado
+  // Navigate to the desired URL
   await page.goto(url);
 
-  // Injetar o Axe no contexto da página
+  // Inject Axe into the page context
   await injectAxe(page);
 
-  // Executar a verificação de acessibilidade e capturar os resultados
+  // Run the accessibility check and capture the results
   const results = await page.evaluate(async () => {
-    // Usando o `axe` no contexto da página
+    // Using `axe` in the page context
     const axeResults = await (window as any).axe.run();
-    return axeResults.violations; // Retorna as violações encontradas
+    return axeResults.violations; // Returns the found violations
   });
 
   await browser.close();
 
-  return results;  // Agora retorna o array de violações
+  return results;  // Now returns the array of violations
 }
