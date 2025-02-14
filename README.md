@@ -24,30 +24,27 @@ npx playwright test
 
 ## 📁 Project Structure
 
-├── .env_example         # Example environment configuration file
+├── **.env_example**         # Example environment configuration file
 
-├── .gitignore           # File to ignore unnecessary files in Git
+├── **.gitignore**           # File to ignore unnecessary files in Git
 
-├── package.json         # Project metadata and dependencies
+├── **package.json**         # Project metadata and dependencies
 
-├── playwright-report/   # Directory containing test reports
+├── **playwright-report/**   # Directory containing test reports
+│   ├── **index.html**       # Main page of the test report
 
-│   ├── index.html       # Main page of the test report
-├── playwright.config.ts # Playwright configuration
+├── **playwright.config.ts** # Playwright configuration
 
-├── README.md            # Project documentation
+├── **README.md**           # Project documentation
 
-├── src/                 # Project source code
-│   ├── accessibility.ts # Code related to accessibility
+├── **src/**                 # Project source code
+│   ├── **accessibility.ts** # Code related to accessibility
 
-├── test-results/        # Directory containing test results
-│   ├── .last-run.json   # JSON with the last execution results
+├── **test-results/**        # Directory containing test results
+│   ├── **.last-run.json**   # JSON with the last execution results
 
-├── tests/               # Directory containing accessibility tests
-│   ├── accessibilityTest.spec.ts # Accessibility test specification
-
-├── tests-examples/      # Test examples
-│   ├── demo-todo-app.spec.ts # Example test for a to-do list application
+├── **tests/**               # Directory containing accessibility tests
+│   ├── **accessibilityTest.spec.ts** # Accessibility test specification
 
 ## 📝 File Descriptions
 
