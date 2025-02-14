@@ -12,6 +12,10 @@ npm install
 
 In this file, insert your tokens and rename the file to .env ( remove the “_example” ) and keep this file in the root of the project.
 
+## 🌐 To use other url to check
+
+In the accessibilityTest.spec.ts file in the test, on line 146 just change it to the desired url.
+
 ## 🚀 Running Tests
 
 To execute the accessibility tests, use the command:
