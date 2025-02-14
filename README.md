@@ -8,7 +8,7 @@ To install the project dependencies, run:
 
 npm install
 
-## ⚙️ .env_examples file
+## ⚙️ .env_example file
 
 In this file, insert your tokens and rename the file to .env ( remove the “_example” ) and keep this file in the root of the project.
 
