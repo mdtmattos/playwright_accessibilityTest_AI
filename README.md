@@ -1,6 +1,6 @@
 ## Playwright Accessibility Test AI
 
-This project performs accessibility testing using Playwright and Artificial Intelligence to provide insights and improvements for web application accessibility.
+This project performs accessibility testing using Playwright and generative AI to provide insights and improvements for web application accessibility.
 
 ## 📌 Installation
 
@@ -74,7 +74,3 @@ npx playwright test
 **tests-examples/**: Directory containing test examples.
 
 **demo-todo-app.spec.ts**: Example test for a to-do list application.
-
-## 🔥 Benefits
-
-With this project, you can identify and fix accessibility issues automatically using AI Generative!
