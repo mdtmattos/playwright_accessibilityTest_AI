@@ -20,8 +20,6 @@ npx playwright test
 
 ## 📁 Project Structure
 
-├── .env                 # Environment variables configuration
-
 ├── .env_example         # Example environment configuration file
 
 ├── .gitignore           # File to ignore unnecessary files in Git
