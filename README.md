@@ -1,20 +1,20 @@
-Playwright Accessibility Test AI
+## Playwright Accessibility Test AI
 
 This project performs accessibility testing using Playwright and Artificial Intelligence to provide insights and improvements for web application accessibility.
 
-📌 Installation
+## 📌 Installation
 
 To install the project dependencies, run:
 
 npm install
 
-🚀 Running Tests
+## 🚀 Running Tests
 
 To execute the accessibility tests, use the command:
 
 npx playwright test
 
-📁 Project Structure
+## 📁 Project Structure
 
 ├── .env                 # Environment variables configuration
 ├── .env_example         # Example environment configuration file
@@ -33,36 +33,22 @@ npx playwright test
 ├── tests-examples/      # Test examples
 │   ├── demo-todo-app.spec.ts # Example test for a to-do list application
 
-📝 File Descriptions
+## 📝 File Descriptions
 
 .env: Environment variables configuration.
-
 .env_example: Example environment configuration file.
-
 .gitignore: Defines files and directories to be ignored by Git.
-
 package.json: Project metadata and dependencies.
-
 playwright-report/: Directory storing test reports.
-
 playwright.config.ts: Playwright configuration.
-
 README.md: Project documentation.
-
 src/: Directory containing accessibility-related code.
-
 accessibility.ts: Code for accessibility analysis.
-
 test-results/: Directory containing test results.
-
 .last-run.json: Last execution results.
-
 tests/: Directory containing accessibility tests.
-
 accessibilityTest.spec.ts: File with test specifications.
-
 tests-examples/: Directory containing test examples.
-
 demo-todo-app.spec.ts: Example test for a to-do list application.
 
-🔥 With this project, you can identify and fix accessibility issues automatically using AI Generative!
+## 🔥 With this project, you can identify and fix accessibility issues automatically using AI Generative!
