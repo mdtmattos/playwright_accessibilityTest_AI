@@ -35,35 +35,35 @@ npx playwright test
 
 ## 📝 File Descriptions
 
-.env: Environment variables configuration.
+**.env**: Environment variables configuration.
 
-.env_example: Example environment configuration file.
+**.env_example**: Example environment configuration file.
 
-.gitignore: Defines files and directories to be ignored by Git.
+**.gitignore**: Defines files and directories to be ignored by Git.
 
-package.json: Project metadata and dependencies.
+**package.json**: Project metadata and dependencies.
 
-playwright-report/: Directory storing test reports.
+**playwright-report/**: Directory storing test reports.
 
-playwright.config.ts: Playwright configuration.
+**playwright.config.ts**: Playwright configuration.
 
-README.md: Project documentation.
+**README.md**: Project documentation.
 
-src/: Directory containing accessibility-related code.
+**src/**: Directory containing accessibility-related code.
 
-accessibility.ts: Code for accessibility analysis.
+**accessibility.ts**: Code for accessibility analysis.
 
-test-results/: Directory containing test results.
+**test-results/**: Directory containing test results.
 
-.last-run.json: Last execution results.
+**.last-run.json**: Last execution results.
 
-tests/: Directory containing accessibility tests.
+**tests/**: Directory containing accessibility tests.
 
-accessibilityTest.spec.ts: File with test specifications.
+**accessibilityTest.spec.ts**: File with test specifications.
 
-tests-examples/: Directory containing test examples.
+**tests-examples/**: Directory containing test examples.
 
-demo-todo-app.spec.ts: Example test for a to-do list application.
+**demo-todo-app.spec.ts**: Example test for a to-do list application.
 
 ## 🔥 Benefits
 
