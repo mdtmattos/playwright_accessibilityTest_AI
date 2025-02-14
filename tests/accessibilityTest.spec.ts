@@ -144,7 +144,7 @@ async function getAiInsightsFromClaude(violations: any[]): Promise<string> {
 test('run accessibility test and obtain AI insights', async ({ page }) => {
   test.setTimeout(120000);
   const url = 'https://www.google.com/'; // URL to be tested
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(3000);
   const axeResults = await runAccessibilityTest(url);
 
   if (!Array.isArray(axeResults)) {
