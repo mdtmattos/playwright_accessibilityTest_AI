@@ -8,6 +8,10 @@ To install the project dependencies, run:
 
 npm install
 
+## ⚙️ .env_examples file
+
+In this file, insert your tokens and rename the file to .env ( remove the “_example” ) and keep this file in the root of the project.
+
 ## 🚀 Running Tests
 
 To execute the accessibility tests, use the command:
