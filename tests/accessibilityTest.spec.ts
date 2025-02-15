@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import axios from 'axios';
 import { runAccessibilityTest } from '../src/accessibility';
 import dotenv from 'dotenv';
+import OpenAI from 'openai';
 dotenv.config();
 
 // Function to format violations
@@ -136,6 +137,30 @@ async function getAiInsightsFromClaude(violations: any[]): Promise<string> {
     return response.data.completion.trim() || 'No suggestions available.';
   } catch (error) {
     console.error('Error obtaining insights from Claude:', error);
+    return 'Error generating insights.';
+  }
+}
+
+// Function to get insights from Deep Seek
+async function getAiInsightsFromDeepSeek(violations: any[]): Promise<string> {
+  const openai = new OpenAI({
+    baseURL: 'https://api.deepseek.com',
+    apiKey: process.env.DEEPSEEK_API_KEY || ''
+  });
+
+  const prompt = generatePrompt(violations);
+
+  try {
+    const completion = await openai.chat.completions.create({
+      messages: [{ role: 'system', content: prompt }],
+      model: 'deepseek-chat',
+      max_tokens: 300,
+      temperature: 0.7
+    });
+
+    return completion.choices?.[0]?.message?.content?.trim() || 'No suggestions available.';
+  } catch (error) {
+    console.error('Error obtaining insights from DeepSeek:', error);
     return 'Error generating insights.';
   }
 }
