@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import { injectAxe } from 'axe-playwright';
 
-export async function runAccessibilityTest(url: string): Promise<any[]> {  // Changed to return an array of objects
+export async function runAccessibilityTest(url: string): Promise<any[]> { 
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
